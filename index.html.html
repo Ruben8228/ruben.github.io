@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura de Computadoras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #800020; /* Fondo guindo */
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #640018;
+        }
+        header img {
+            max-width: 150px;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        nav {
+            background-color: #4f0012;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            color: #FFD700;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #640018;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGOits.png" alt="Logo del Instituto Tecnológico de Saltillo">
+        <h1>Arquitectura de Computadoras</h1>
+    </header>
+
+    <nav>
+        <a href="#unidad1">Unidad 1</a>
+        <a href="#unidad2">Unidad 2</a>
+        <a href="#unidad3">Unidad 3</a>
+        <a href="#unidad4">Unidad 4</a>
+    </nav>
+
+    <section id="unidad1">
+        <h2>Unidad 1: Modelos de Arquitectura</h2>
+        <ul>
+            <li><strong>1.1 Modelos de arquitectura</strong>
+                <ul>
+                    <li><strong>1.1.1 Clásicos:</strong> Los modelos clásicos de arquitectura se basan en el diseño de von Neumann, caracterizado por un almacenamiento compartido de datos e instrucciones.</li>
+                    <li><strong>1.1.2 Segmentados:</strong> Este modelo divide el procesamiento en varias etapas, como la segmentación de instrucciones, para optimizar el rendimiento.</li>
+                    <li><strong>1.1.3 De multiprocesamiento:</strong> Utilizan múltiples procesadores para ejecutar varias tareas simultáneamente, mejorando la eficiencia en sistemas complejos.</li>
+                </ul>
+            </li>
+            <li><strong>1.2 Análisis de los componentes</strong>
+                <ul>
+                    <li><strong>1.2.1 Arquitectura</strong>
+                        <ul>
+                            <li><strong>1.2.1.1 Unidad central de procesamiento:</strong> Es el cerebro del sistema, encargado de ejecutar instrucciones y coordinar operaciones.</li>
+                            <li><strong>1.2.1.2 Unidad aritmética lógica:</strong> Realiza cálculos matemáticos y operaciones lógicas esenciales.</li>
+                            <li><strong>1.2.1.3 Registros:</strong> Almacenes pequeños y rápidos dentro del procesador para datos temporales.</li>
+                            <li><strong>1.2.1.4 Buses:</strong> Canales de comunicación para transferir datos entre componentes del sistema.</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.2.2 Memoria</strong>
+                        <ul>
+                            <li><strong>1.2.2.1 Conceptos básicos del manejo de memoria:</strong> Incluyen la organización y acceso a datos en la memoria principal y secundaria.</li>
+                            <li><strong>1.2.2.2 Memoria principal:</strong> Almacena datos e instrucciones utilizados activamente por el procesador.</li>
+                            <li><strong>1.2.2.3 Memoria caché:</strong> Una memoria rápida que almacena datos frecuentemente utilizados para acelerar el acceso.</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.2.3 Manejo de entrada/salida</strong>
+                        <ul>
+                            <li><strong>1.2.3.1 Módulos de entrada/salida:</strong> Facilitan la comunicación entre el sistema y dispositivos periféricos.</li>
+                            <li><strong>1.2.3.2 Entrada y salida programada:</strong> Un método en el que el procesador controla directamente las operaciones de E/S.</li>
+                            <li><strong>1.2.3.3 Entrada/salida mediante interrupciones:</strong> Mejora la eficiencia al permitir que el procesador responda solo cuando se le solicita.</li>
+                            <li><strong>1.2.3.4 Acceso directo de memoria:</strong> Permite transferencias rápidas entre memoria y dispositivos sin intervención del procesador.</li>
+                            <li><strong>1.2.3.5 Canales y procesadores de entrada/salida:</strong> Son controladores dedicados que manejan tareas de E/S de manera autónoma.</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.2.4 Buses</strong>
+                        <ul>
+                            <li><strong>1.2.4.1 Tipos de buses:</strong> Incluyen buses de datos, de direcciones y de control.</li>
+                            <li><strong>1.2.4.2 Estructura de buses:</strong> La organización física y lógica que conecta los componentes.</li>
+                            <li><strong>1.2.4.3 Jerarquía de buses:</strong> Describe cómo los buses están organizados para optimizar el rendimiento.</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.2.5 Interrupciones:</strong> Mecanismo que permite al procesador responder a eventos externos o internos de manera eficiente.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="unidad2">
+        <h2>Unidad 2: Estructura y Funcionamiento de la Unidad Central de Procesamiento</h2>
+        <ul>
+            <li><strong>2.1 Organización del procesador:</strong> Describe cómo se interconectan los elementos internos para ejecutar instrucciones.</li>
+            <li><strong>2.2 Estructura de registros</strong>
+                <ul>
+                    <li><strong>2.2.1 Registros visibles para el usuario:</strong> Utilizados para almacenar datos temporales durante la ejecución de programas.</li>
+                    <li><strong>2.2.2 Registros de control y estados:</strong> Almacenan información sobre el estado del procesador y las operaciones en curso.</li>
+                    <li><strong>2.2.3 Ejemplos CPU:</strong> Analiza la estructura y características de procesadores específicos.</li>
+                </ul>
+            </li>
+            <li><strong>2.3 El ciclo de la instrucción</strong>
+                <ul>
+                    <li><strong>2.3.1 Ciclo Fetch-Decode-Execute (FDE):</strong> Describe cómo el procesador obtiene, interpreta y ejecuta instrucciones.</li>
+                    <li><strong>2.3.2 Segmentación de instrucciones:</strong> Divide el ciclo de instrucción en etapas para mejorar el rendimiento.</li>
+                    <li><strong>2.3.3 Modos de direccionamiento:</strong> Técnicas para acceder a datos en memoria.</li>
+                    <li><strong>2.3.4 Estudio y análisis de CPU:</strong> Evalúa el rendimiento y diseño de procesadores.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="unidad3">
+        <h2>Unidad 3: Selección de Componentes para Ensamble de Equipo de Cómputo</h2>
+        <ul>
+            <li><strong>3.1 Chipset</strong>
+                <ul>
+                    <li><strong>3.1.1 Unidad central de procesamiento:</strong> Elemento clave para el rendimiento del sistema.</li>
+                    <li><strong>3.1.2 Controlador del bus:</strong> Coordina la transferencia de datos entre los componentes.</li>
+                    <li><strong>3.1.3 Puertas de entrada/salida:</strong> Permiten la conexión de dispositivos periféricos.</li>
+                    <li
